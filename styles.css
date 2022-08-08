@@ -1,5 +1,10 @@
 body{
  margin: 0px;
+ font-family: "EB"
+}
+
+body {
+  font-family: "EB Garamond"; font-size: 24px; 
 }
 
 ul {
