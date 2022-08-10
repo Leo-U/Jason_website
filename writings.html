@@ -11,11 +11,44 @@
 <body onload="addEvent()">
   <audio id="audio" src="media/oh-my-god-its-so-juicy.mp3"></audio>
   <script src="scripts.js"></script>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li style="background-color: #04AA6D"><a href="writings.html" class="active">Writings</a></li>
-    <li><a href="videos.html">Videos</a></li>
-    <li><a href="photography.html">Photography</a></li>
+
+  <!-- navbar -->
+  <ul class="ul-nav">
+    <li class="li-nav"><a href="index.html">Home</a></li>
+    <li class="li-nav" style="background-color: #04AA6D"><a href="writings.html" class="active-page">Writings</a></li>
+    <li class="li-nav"><a href="videos.html">Videos</a></li>
+    <li class="li-nav"><a href="photography.html">Photography</a></li>
   </ul>
+  <!-- end navbar -->
+
+<!-- collapsible TOC -->
+<div class="toc-wrapper">
+  <button class="collapsible">Content</button>
+  <div class="content">
+    <ul class="ul-toc">
+      <li class="li-toc"><a href="#">item</li>
+      <li class="li-toc"><a href="#">item</li>
+      <li class="li-toc"><a href="#">item</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<!-- end collapsible TOC -->
+
 </body>
 </html>

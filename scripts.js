@@ -1,3 +1,4 @@
+// silly sounds
 function addEvent(){
   document.body.addEventListener("click", play)
 }
@@ -6,3 +7,8 @@ function play() {
  audio.play();
 }
 play();
+//end silly sounds
+
+//collapsible action
+
+//end collapsible action
