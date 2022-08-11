@@ -7,6 +7,7 @@ body {
   font-family: "EB Garamond"; 
 }
 
+/* navbar styling */
 .ul-nav {
   list-style-type: none;
   margin: 0;
@@ -27,10 +28,11 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 16px;
   text-decoration: none;
 }
 
 .li-nav a:hover:not(.active-page) {
   background-color: #111;
 }
+/* end navbar styling */
