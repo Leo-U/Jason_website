@@ -1,12 +1,7 @@
 body{
  margin: 0px;
- font-family: "EB"
+ font-family: "EB Garamond"
 }
-
-body {
-  font-family: "EB Garamond"; 
-}
-
 /* navbar styling */
 .ul-nav {
   list-style-type: none;
@@ -28,7 +23,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 5px 16px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
