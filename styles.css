@@ -1,6 +1,6 @@
 body{
  margin: 0px;
- font-family: "EB Garamond"
+ font-family: "EB Garamond";
 }
 /* navbar styling */
 .ul-nav {
@@ -31,3 +31,16 @@ body{
   background-color: #111;
 }
 /* end navbar styling */
+
+
+.writings-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.prose {
+  max-width: 55ch;
+  font-size: 23px;
+  color: #334155;
+  padding: 10px;
+}
