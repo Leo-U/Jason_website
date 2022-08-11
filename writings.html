@@ -14,41 +14,13 @@
 
   <!-- navbar -->
   <ul class="ul-nav">
-    <li class="li-nav"><a href="index.html">Home</a></li>
-    <li class="li-nav" style="background-color: #04AA6D"><a href="writings.html" class="active-page">Writings</a></li>
-    <li class="li-nav"><a href="videos.html">Videos</a></li>
-    <li class="li-nav"><a href="photography.html">Photography</a></li>
+    <li class="li-nav"><a class = "anchor-nav" href="index.html">Home</a></li>
+    <li class="li-nav" style="background-color: #04AA6D"><a class = "anchor-nav active-page" href="writings.html">Writings</a></li>
+    <li class="li-nav"><a class = "anchor-nav" href="videos.html">Videos</a></li>
+    <li class="li-nav"><a class = "anchor-nav" href="music.html">Music</a></li>
+    <li class="li-nav"><a class = "anchor-nav" href="photography.html">Photography</a></li>
   </ul>
   <!-- end navbar -->
-
-<!-- collapsible TOC -->
-<div class="toc-wrapper">
-  <button class="collapsible">Content</button>
-  <div class="content">
-    <ul class="ul-toc">
-      <li class="li-toc"><a href="#">item</li>
-      <li class="li-toc"><a href="#">item</li>
-      <li class="li-toc"><a href="#">item</li>
-    </ul>
-  </div>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-<!-- end collapsible TOC -->
 
 </body>
 </html>

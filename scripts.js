@@ -8,7 +8,3 @@ function play() {
 }
 play();
 //end silly sounds
-
-//collapsible action
-
-//end collapsible action
