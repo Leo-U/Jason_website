@@ -2,6 +2,7 @@ body{
  margin: 0px;
  font-family: "EB Garamond";
 }
+
 /* navbar styling */
 .ul-nav {
   list-style-type: none;
@@ -33,14 +34,99 @@ body{
 /* end navbar styling */
 
 
+/* TOC and prose styling (CONTINUES TO LINE #)*/
 .writings-main-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapsible-toc {
+  align-self: flex-start;
 }
 
 .prose {
-  max-width: 55ch;
+  max-width: 65ch;
   font-size: 23px;
   color: #334155;
-  padding: 10px;
+  padding: 50px;
 }
+
+
+/* w3schools sidebar styling */
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(165, 159, 159);
+  border: none;
+  position: fixed;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.openbtn:hover {
+  color: black;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.toc-title {
+  color: rgb(170, 169, 169);
+  font-size: 23px;
+  margin-left: 2px;
+}
+
+/* end sidebar styling */
+
+/* end TOC and prose styling */
