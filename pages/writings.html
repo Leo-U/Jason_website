@@ -12,6 +12,7 @@
   <audio id="audio" src="../media/oh-my-god-its-so-juicy.mp3"></audio>
   <script src="../scripts.js"></script>
 
+
   <!-- navbar -->
   <ul class="ul-nav">
     <li class="li-nav"><a class = "anchor-nav" href="index.html">Home</a></li>
@@ -29,17 +30,57 @@
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <p class = "toc-title">Writings</p>
-        <a href="#">item 1</a>
-        <a href="#">item 2</a>
-        <a href="#">item 3</a>
-        <a href="#">item 4</a>
+        <a id = "toc-item-1" href="#">item 1</a>
+        <a id = "toc-item-2" href="#">item 2</a>
+        <a id = "toc-item-3" href="#">item 3</a>
+        <a id = "toc-item-4" href="#">item 4</a>
       </div>
+      <script>
+
+        // plan: make it so you can enter text content and a title, and then click a button to submit a new document. the title will become the new list item as well. problem to solve: a new list item will require new event listeners. But at least we know we can save html as a string and then use that string for changing innerHTML in an event as seen below with myVariable. Must also find way to convert separated paragraph whitespace into <p> tags (look for premade tools that can do this!).
+        const linkItem1 = document.getElementById("toc-item-1");
+        
+        let myVariable = "<h1>horseshit<h1>";
+
+        function proseLink1() {
+          document.getElementById("prose").innerHTML = myVariable;
+        }
+        linkItem1.addEventListener('click', proseLink1)
+
+        //----------
+
+        const linkItem2 = document.getElementById("toc-item-2");
+
+        function proseLink2() {
+          document.getElementById("prose").innerHTML = "<h3>fdkljfd</h3>fdsfadsfadsfads";
+        }
+        linkItem2.addEventListener('click', proseLink2);
+
+        //----------
+
+        const linkItem3 = document.getElementById("toc-item-3");
+
+        function proseLink3() {
+          document.getElementById("prose").innerHTML = "fdafd";
+        }
+        linkItem3.addEventListener("click", proseLink3);
+
+        //----------
+
+        const linkItem4 = document.getElementById("toc-item-4")
+
+        function proseLink4() {
+          document.getElementById("prose").innerHTML = "fdsafdasf";
+        }
+
+        linkItem4.addEventListener('click', proseLink4);
+      </script>
       <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-      <!-- end collapsible sidebar -->
+        <button class="openbtn" id = "openbtn" onclick="openNav()">&#9776;</button>
       </div>
+      <!-- end collapsible sidebar -->
     </div>
-    <div class="prose">
+    <div class="prose" id="prose">
       <h3>Your Title</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis sapien eu feugiat blandit. Suspendisse fermentum porttitor facilisis. Cras quis est commodo, gravida neque a, ultricies libero. Fusce neque mauris, interdum in lacus at, lobortis hendrerit elit. Donec lacinia dolor id lacus posuere, eu fermentum urna lobortis. Proin ac dolor eros. Praesent vitae quam ut augue viverra rhoncus.</p>
       <p>Suspendisse placerat libero ante, ac convallis enim facilisis scelerisque. Maecenas tempus urna et tristique venenatis. Suspendisse arcu erat, commodo nec fermentum vitae, malesuada vel ligula. Quisque tincidunt metus sed commodo scelerisque. Nulla facilisi. Nulla consectetur nisi eu nisl dignissim faucibus. Maecenas non porta quam. Sed mattis nisl urna, nec congue ligula sodales et.</p>

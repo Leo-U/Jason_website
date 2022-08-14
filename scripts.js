@@ -11,7 +11,7 @@ play();
 
 
 
-//start navbar 
+//start sidebar 
 
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
@@ -24,3 +24,5 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+//end sidebar
