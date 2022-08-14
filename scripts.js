@@ -34,7 +34,8 @@ const openButton = document.getElementById('openbtn')
 
 function growHamburgerMenu() {
   if (window.innerWidth > 850) {
-    openButton.setAttribute('style', 'font-size: 70px')
+    openButton.setAttribute('style', 'font-size: 70px');
+    openButton.style.color = "rgb(170 169 169 / 75%)"
   } else {
     openButton.setAttribute('style', 'font-size: 30px')
   }
@@ -43,34 +44,6 @@ function growHamburgerMenu() {
 growHamburgerMenu();
 
 window.addEventListener('resize', growHamburgerMenu);
-
-
-//end sidebar button flexible size
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //end sidebar button flexible size
@@ -102,9 +75,7 @@ function proseLink3() {
 }
 linkItem3.addEventListener("click", proseLink3);
 
-//----------
-
-const linkItem4 = document.getElementById("toc-item-4")
+//---------- tElementById("toc-item-4")
 
 function proseLink4() {
   document.getElementById("prose").innerHTML = "fdsafdasf";
