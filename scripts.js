@@ -27,6 +27,54 @@ function closeNav() {
 
 //end sidebar
 
+//start sidebar button flexible size
+
+const openButton = document.getElementById('openbtn')
+
+
+function growHamburgerMenu() {
+  if (window.innerWidth > 850) {
+    openButton.setAttribute('style', 'font-size: 70px')
+  } else {
+    openButton.setAttribute('style', 'font-size: 30px')
+  }
+}
+
+growHamburgerMenu();
+
+window.addEventListener('resize', growHamburgerMenu);
+
+
+//end sidebar button flexible size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end sidebar button flexible size
+
 const linkItem1 = document.getElementById("toc-item-1");
         
 let myVariable = "<h1>horseshit<h1>";
