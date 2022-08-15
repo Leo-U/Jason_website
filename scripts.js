@@ -33,7 +33,7 @@ const openButton = document.getElementById('openbtn')
 
 
 function growHamburgerMenu() {
-  if (window.innerWidth > 850) {
+  if (window.innerWidth > 896) {
     openButton.setAttribute('style', 'font-size: 70px');
     openButton.style.color = "rgb(170 169 169 / 75%)";
     openButton.addEventListener('mouseenter', (event) => {
@@ -43,7 +43,13 @@ function growHamburgerMenu() {
       event.target.style.color = "rgb(170 169 169 / 75%)"
     });
   } else {
-    openButton.setAttribute('style', 'font-size: 30px')
+    openButton.setAttribute('style', 'font-size: 30px');
+    openButton.addEventListener('mouseenter', (event) => {
+      event.target.style.color = "black"
+    });
+    openButton.addEventListener('mouseleave', (event) => {
+      event.target.style.color = "#68a0fa"
+    });
   }
 }
 
