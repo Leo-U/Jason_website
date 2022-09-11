@@ -131,6 +131,15 @@ body{
 
 /* end TOC and prose styling */
 
+/* start video styling */
+  .vid-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-shrink: 2;
+  }
+/* end video styling */
 
 /* stylesheet for EB garamond font */
 
