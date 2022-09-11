@@ -25,6 +25,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
+
 //end sidebar
 
 //start sidebar button flexible size
@@ -60,9 +61,12 @@ window.addEventListener('resize', growHamburgerMenu);
 
 //end sidebar button flexible size
 
+
+//start sidebar link handling
+
 const linkItem1 = document.getElementById("toc-item-1");
         
-let myVariable = "<h1>horseshit<h1>";
+let myVariable = "<h1>it is GOOD to be the kinnng<h1>";
 
 function proseLink1() {
   document.getElementById("prose").innerHTML = myVariable;
@@ -96,3 +100,9 @@ function proseLink4() {
 }
 
 linkItem4.addEventListener('click', proseLink4);
+
+
+//end sidebar link handling
+
+
+
